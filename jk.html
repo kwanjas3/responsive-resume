@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JK</title>
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <style>
+    html {
+      font-size: 24px;
+    }
+
+    body {
+      font-family: "Avenir", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #304455;
+    }
+
+    .edu,
+    .sidebar {
+      margin-top: 0.5em;
+      margin-bottom: .5rem;
+    }
+
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    .container {
+      background-color: #f8f8f8;
+      height: 100vh;
+    }
+
+    .job-title {
+      background-color: #e7ecf3;
+      color: #d63200;
+    }
+
+    b {
+      color: #d63200;
+    }
+
+    li {
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+    }
+
+    .font-weight-bold {
+      color: #42b983;
+
+    }
+
+    .name-subtitle {
+      color: #2973b7;
+    }
+
+    .name-subtitle>h1 {
+      font-weight: 900;
+    }
+
+    .heading-underline {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border-top: #42b983 4px solid;
+
+    }
+
+    #main-content {
+      border-right: #42b983 4px solid;
+    }
+
+    @media(max-width: 768px) {
+      .name-subtitle>h1 {
+        font-size: 2rem !important;
+      }
+
+      #main-content {
+        border-right: none;
+        border-top: #42b983 4px solid;
+        margin-top: 1rem;
+        padding-top: 1rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 d-flex align-items-center justify-content-between">
+        <div class="name-subtitle d-flex flex-column">
+          <h1 class=" pt-3 pb-3 pr-3 m-0">JASON KWAN</h1>
+          <p>Software Developer | Seneca College | University of Toronto </p>
+        </div>
+        <div class="contact-info d-flex flex-column align-items-end align-self-end">
+          <a href="https://www.github.com/kwanjas3" target="_blank">Github</a>
+          <a href="https://www.github.com/kwanjas3/responsive-resume" target="_blank">Source Code :
+            Resume</a>
+        </div>
+      </div>
+      <div class="col-md-12 heading-underline">
+      </div>
+    </div>
+    <div class="row">
+      <div id="main-content" class="col-md-8">
+        <div class="entry">
+          <h2 class="h4 font-weight-bold">
+            Experience
+          </h2>
+          <h3 class="h6 job-title">
+            <b>
+              Software Developer | Nov 2018 - Present
+            </b>
+          </h3>
+          <h3 class="h6">
+            Pearson
+          </h3>
+          <ul>
+            <li>
+              Developed Front-end async web app to bulk compile 200 websites with native API
+              get/post calls in Native JS
+            </li>
+            <li>
+              Developed a VueJS app that consumes ePub xhtmls to generate a responsive AA accessible
+              website (bootstrap-vue, axios, vue-router)
+            </li>
+            <li>
+              Developed VueJS 3 app for QA processes that automates form posting,
+              link checking, score verifying links to match the contents provided by
+              csv (bootstrap-vue, axios, vue-router, lunr)
+            </li>
+            <li>
+              Bootstrap mock-ups based off wireframes from editorial
+            </li>
+            <li>
+              Template components/snippets and websites for media developers, products and projects
+            </li>
+            <li>
+              Developed Electron app to create local proxy server to access resources that are
+              cross-origins
+            </li>
+          </ul>
+        </div>
+        <div class="entry">
+
+          <h3 class="h6 job-title">
+            <b>
+              Software Programmer Analyst | Jan 2018 - Nov 2018
+            </b>
+          </h3>
+          <h3 class="h6">
+            Seneca College
+          </h3>
+          <ul>
+            <li>
+              Developed Booking Application API to integrate PeopleSoft with Office365 in Java
+            </li>
+            <li>
+              Developed Airport Training program for Pilot students to familiarize with signage
+            </li>
+            <li>
+              Developed Airport Video Trainer for Pilot students to familiarize with airport
+              protocol utilizing YouTube API </li>
+            <li>
+              Optimized email JS code for international students detailing courses/class schedules
+            </li>
+            <li>
+              Developed Front-end ReactJS app rendering internal email group lists utilizing axios
+              to get xml data </li>
+          </ul>
+        </div>
+
+
+      </div>
+      <div id="sidebar" class="col-md-4">
+        <h2 class="h4 font-weight-bold">
+          Skills
+        </h2>
+        <div class="sidebar">
+          <h2 class="h5 job-title">Frameworks</h2>
+          <p>VueJS 2.x, VueJS 3(vue-function-api) based off rfc</p>
+          <p>React</p>
+          <p>Bootstrap/Flexbox</p>
+        </div>
+        <div class="sidebar">
+          <h2 class="h5 job-title">
+            Tools
+          </h2>
+          <p>Dreamfactory </p>
+          <p>Sequel Pro </p>
+          <p>Github </p>
+          <p>BitBucket </p>
+          <p>VSCode </p>
+          <p>NPM </p>
+          <p>Node </p>
+
+        </div>
+        <div class="sidebar">
+          <h2 class="h5 job-title">
+            Languages
+          </h2>
+          <p>ES6+ JS/HTML/CSS</p>
+          <p>C++</p>
+          <p>SQL</p>
+          <p>Java</p>
+        </div>
+
+        <div class="sidebar">
+          <h2 class="h4 font-weight-bold">
+            Education
+          </h2>
+          <div class="edu">
+            <p> Physical Geography </p>
+            <p> University of Toronto </p>
+            <p> B.Sc. 2008 – 2013 </p>
+
+
+
+
+          </div>
+          <div class="edu">
+            <p>
+              Computer Programming
+            </p>
+            <p>
+              Seneca College
+            </p>
+            <p>
+              D. 2017-2019
+            </p>
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var sidebar = document.querySelector('#sidebar')
+    var mainContent = document.querySelector('#main-content')
+
+    const mediaArrange = () => {
+      if (window.innerWidth < 768) {
+        sidebar.className = "col-md-4 order-1 text-center"
+        mainContent.className = "col-md-8 order-2"
+      } else {
+        sidebar.className = "col-md-4 "
+        mainContent.className = "col-md-8"
+      }
+    }
+    window.onload = mediaArrange
+    window.onresize = debounce(
+      mediaArrange, .2)
+
+    function debounce(func, wait, immediate) {
+      var timeout;
+      return function () {
+        var context = this,
+          args = arguments;
+        var later = function () {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+      };
+    };
+  </script>
+</body>
+
+
+</html>
