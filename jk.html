@@ -315,6 +315,21 @@
         if (callNow) func.apply(context, args);
       };
     };
+    
+    //db v2
+    
+    const db = (func, timer)=>{
+    let ttb = null;
+      
+      return (...args) => {
+      if (ttb){
+        clearTimeout(ttb)
+      }
+      ttb = setTimeout(()=>{
+      func(...args)
+      }, timer)
+      }
+    }
   </script>
 </body>
 
