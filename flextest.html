@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Wrap Grow basis with no MQ</title>
+    <link defer rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+
+    <style>
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .columns>* {
+            /* flex-basis: 250px; */
+            flex-basis: calc(calc(800px - 100%)*999);
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-content">
+        <div class="container-fluid">
+            <h1>Testing</h1>
+            <div class="columns">
+                <div class="card flow"><strong>test</strong>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt dicta facere nihil assumenda
+                        magnam quisquam? Exercitationem aliquid hic voluptatum iure!</p>
+                </div>
+                <div class="card flow"><strong>test</strong>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt dicta facere nihil assumenda
+                        magnam quisquam? Exercitationem aliquid hic voluptatum iure! Lorem ipsum dolor sit amet
+                        consectetur
+                        adipisicing elit. Sunt excepturi cum corporis magni neque laboriosam nostrum quasi earum,
+                        voluptatem
+                        soluta!</p>
+                </div>
+                <div class="card flow"><strong>test</strong>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt dicta facere nihil assumenda
+                        magnam quisquam? Exercitationem aliquid hic voluptatum iure!</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
