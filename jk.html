@@ -51,7 +51,7 @@
       }
 
       li {
-        margin-bottom: 0.5rem;
+        /* margin-bottom: 0.5rem; */
       }
 
       .font-weight-bold {
@@ -87,9 +87,7 @@
 
         #main-content {
           border-right: none;
-          border-top: #42b983 4px solid;
-          margin-top: 1rem;
-          padding-top: 1rem;
+          /* border-top: #42b983 4px solid; */
         }
       }
     </style>
@@ -303,50 +301,50 @@
     </div>
 
     <script>
-      var sidebar = document.querySelector("#sidebar");
-      var mainContent = document.querySelector("#main-content");
+      // var sidebar = document.querySelector("#sidebar");
+      // var mainContent = document.querySelector("#main-content");
 
-      const mediaArrange = () => {
-        if (window.innerWidth < 768) {
-          sidebar.className = "col-md-4 order-1 text-center";
-          mainContent.className = "col-md-8 order-2";
-        } else {
-          sidebar.className = "col-md-4 ";
-          mainContent.className = "col-md-8";
-        }
-      };
-      window.onload = mediaArrange;
-      window.onresize = debounce(mediaArrange, 0.2, true);
+      // const mediaArrange = () => {
+      //   if (window.innerWidth < 768) {
+      //     sidebar.className = "col-md-4 order-1 text-center";
+      //     mainContent.className = "col-md-8 order-2";
+      //   } else {
+      //     sidebar.className = "col-md-4 ";
+      //     mainContent.className = "col-md-8";
+      //   }
+      // };
+      // window.onload = mediaArrange;
+      // window.onresize = debounce(mediaArrange, 0.2, true);
 
-      function debounce(func, wait, immediate) {
-        var timeout;
-        return function () {
-          var context = this,
-            args = arguments;
-          var later = function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-          };
-          var callNow = immediate && !timeout;
-          clearTimeout(timeout);
-          timeout = setTimeout(later, wait);
-          if (callNow) func.apply(context, args);
-        };
-      }
+      // function debounce(func, wait, immediate) {
+      //   var timeout;
+      //   return function () {
+      //     var context = this,
+      //       args = arguments;
+      //     var later = function () {
+      //       timeout = null;
+      //       if (!immediate) func.apply(context, args);
+      //     };
+      //     var callNow = immediate && !timeout;
+      //     clearTimeout(timeout);
+      //     timeout = setTimeout(later, wait);
+      //     if (callNow) func.apply(context, args);
+      //   };
+      // }
 
-      //db v2
-      const db = (func, timer) => {
-        let ttb = null;
+      // //db v2
+      // const db = (func, timer) => {
+      //   let ttb = null;
 
-        return (...args) => {
-          if (ttb) {
-            clearTimeout(ttb);
-          }
-          ttb = setTimeout(() => {
-            func(...args);
-          }, timer);
-        };
-      };
+      //   return (...args) => {
+      //     if (ttb) {
+      //       clearTimeout(ttb);
+      //     }
+      //     ttb = setTimeout(() => {
+      //       func(...args);
+      //     }, timer);
+      //   };
+      // };
     </script>
   </body>
 </html>
